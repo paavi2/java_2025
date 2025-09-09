@@ -18,6 +18,16 @@ public class Palindrom_String {
         return true;
     }
 
+    public static boolean isPalindromUsingCollection(String str){
+        str = str.replace(",", "")
+                .replace(" ","")
+                .toLowerCase();
+        StringBuilder sb = new StringBuilder(str);
+        String out = sb.reverse().toString();
+        System.out.println("Input => "+str);
+        System.out.println("Reversed => "+out);
+        return str.equals(out);
+    }
     public static void main(String[] args) {
         System.out.println(" => "+isPalindrome("madam")); //true
         System.out.println(" => "+isPalindrome("Madam")); //true
@@ -29,5 +39,6 @@ public class Palindrom_String {
         System.out.println(" => "+isPalindrome("12345")); // false
         System.out.println(" => "+isPalindrome("nurses run")); // true
         System.out.println(" => "+isPalindrome("A man, a plan, a canal, Panama")); // true
+        System.out.println(" => "+isPalindromUsingCollection("A man, a plan, a canal, Panama")); // true
     }
 }
