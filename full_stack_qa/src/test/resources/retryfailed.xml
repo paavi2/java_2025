@@ -1,0 +1,10 @@
+<suite name="Rerun failed scripts">
+    <listeners>
+        <listener class-name="base.AnnotationTransformer"></listener>
+    </listeners>
+    <test name = "Rerun">
+        <classes>
+            <class name="rerun_failed.TestLevelRetry"></class>
+        </classes>
+    </test>
+</suite>

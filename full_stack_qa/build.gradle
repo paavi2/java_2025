@@ -14,7 +14,7 @@ dependencies {
     implementation("org.seleniumhq.selenium:selenium-java:4.34.0")}
 
 test {
-    useTestNG(){
-        suites('acmeproduct_price.xml')
+    useTestNG() {
+        suites 'src/test/resources/retryfailed.xml'
     }
 }

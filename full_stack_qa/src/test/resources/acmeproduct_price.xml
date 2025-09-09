@@ -1,7 +1,7 @@
-<suites name =" Acme products test">
-    <test>
-        <class name="ui.selenium.acmestore.TestAcmeStore">
-
-        </class>
+<suite name="Demo Acne Product Tests" >
+    <test name="Test Product Name and price" >
+        <classes>
+            <class name="ui.selenium.acmestore.TestAcmeStore" />
+        </classes>
     </test>
-</suites>
+</suite>
