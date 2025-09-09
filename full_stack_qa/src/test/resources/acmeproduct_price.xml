@@ -1,0 +1,7 @@
+<suites name =" Acme products test">
+    <test>
+        <class name="ui.selenium.acmestore.TestAcmeStore">
+
+        </class>
+    </test>
+</suites>
