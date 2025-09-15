@@ -5,6 +5,7 @@ import java.util.Arrays;
 //Two pointers
 public class RemoveDuplicatesFromSortedArray {
 
+    //slow pointer & fast pointer
     public static int[] removeDuplicates(int []ar){
         System.out.println("Input => "+Arrays.toString(ar));
         int left = 0;
@@ -22,6 +23,7 @@ public class RemoveDuplicatesFromSortedArray {
     }
 
     public static void main(String[] args) {
-        removeDuplicates(new int[]{0,1,1,1,2,2,3,5});
+        removeDuplicates(new int[]{1,2,3,3,3,4,4,4,5});
+//        removeDuplicates(new int[]{0,1,1,1,2,2,3,5});
     }
 }
